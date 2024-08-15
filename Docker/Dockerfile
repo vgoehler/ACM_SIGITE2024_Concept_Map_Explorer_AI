@@ -19,11 +19,11 @@ COPY environment.yml .
 # use conda env create! resolution of PyPI packages needs this, had huge problems with conda create!
 RUN conda env create --prefix ./envs --file environment.yml -y
 
-RUN conda init bash
-RUN echo "conda activate ./envs" >> ~/.bashrc
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN echo "#!/bin/bash --login" > starter.sh && echo "conda activate ./envs" >> starter.sh && chmod u+x starter.sh
+RUN conda init bash && \
+    echo "conda activate ./envs" >> ~/.bashrc && \
+    echo "#!/bin/bash --login" > starter.sh && echo "conda activate ./envs" >> starter.sh && chmod u+x starter.sh
 
 #ENTRYPOINT ["conda", "run", "--no-capture-output", "--name", "Python3.8"]
 ENTRYPOINT ["./starter.sh"]
