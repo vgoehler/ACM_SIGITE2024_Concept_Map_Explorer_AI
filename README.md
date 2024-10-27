@@ -6,6 +6,7 @@
 Unsupervised Learning Approach with Graph Neural Networks**
 
 **Abstract of Paper:**
+
 It is of paramount importance for teachers to comprehend the knowledge acquired by their students in order to validate their teaching methods and ensure accuracy. Concept maps (CMs), which graphically represent knowledge, are effective tools for visualising learning and tracking progress. However, interpreting CMs is challenging due to their complexity and the multitude of interconnected concepts.
 
 To address this challenge, we propose an unsupervised learning methodology leveraging graph neural networks—specifically Node2Vec and GraphSAGE—to analyze CMs autonomously.
