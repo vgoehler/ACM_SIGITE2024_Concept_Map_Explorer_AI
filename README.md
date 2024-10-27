@@ -1,6 +1,6 @@
-# CMAuUL (Pronounced as SMOL)
+# CMAuUL 
 
-## CM Analysis using Unsupervised Learning 
+## (Pronounced as SMOL)
 
 **Analyzing Concept Maps in Computer Science Education: An
 Unsupervised Learning Approach with Graph Neural Networks**
